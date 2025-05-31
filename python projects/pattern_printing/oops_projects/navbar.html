@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.S_library system - Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #07334c;
+            padding: 0 40px 0 0;
+            height: 90px;
+        }
+        .navbar-left {
+            display: flex;
+            align-items: center;
+            background: #07334c;
+            border-bottom-right-radius: 120px;
+            height: 100%;
+            padding: 0 50px 0 40px;
+        }
+        .navbar-logo {
+            height: 60px;
+            width: 60px;
+            object-fit: contain;
+            margin-right: 18px;
+        }
+        .navbar-title {
+            color: #fff;
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .navbar-center {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .navbar-menu {
+            display: flex;
+            gap: 32px;
+        }
+        .navbar-menu li {
+            list-style: none;
+            position: relative;
+        }
+        .navbar-menu a {
+            text-decoration: none;
+            color: #07334c;
+            font-size: 1.15rem;
+            font-weight: 500;
+            padding: 8px 0;
+            transition: color 0.2s;
+        }
+        .navbar-menu a:hover {
+            color: #0d6efd;
+        }
+        .dropdown-icon {
+            font-size: 0.8em;
+            margin-left: 4px;
+        }
+        .navbar-right {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+        .icon-btn {
+            position: relative;
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 50%;
+            width: 52px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: box-shadow 0.2s;
+        }
+        .icon-btn:hover {
+            box-shadow: 0 2px 8px rgba(7,51,76,0.12);
+        }
+        .icon-btn i {
+            color: #07334c;
+            font-size: 1.4rem;
+        }
+        .icon-badge {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            background: #0a6a85;
+            color: #fff;
+            font-size: 0.95rem;
+            font-weight: bold;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #fff;
+        }
+        @media (max-width: 900px) {
+            .navbar-center { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="C:/Users/HP/OneDrive/Desktop/python projects/pattern_printing/oops_projects/Screenshot 2025-05-19 181135.png" alt="Logo" class="navbar-logo">
+            <span class="navbar-title">A.S_library system</span>
+        </div>
+        <div class="navbar-center">
+            <ul class="navbar-menu">
+                <li><a href="#">Home <i class="fa-solid fa-chevron-down dropdown-icon"></i></a></li>
+                <li><a href="#">Shop <i class="fa-solid fa-chevron-down dropdown-icon"></i></a></li>
+                <li><a href="#">Pages <i class="fa-solid fa-chevron-down dropdown-icon"></i></a></li>
+                <li><a href="#">Blog <i class="fa-solid fa-chevron-down dropdown-icon"></i></a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="icon-btn">
+                <span class="icon-badge">0</span>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="icon-btn">
+                <span class="icon-badge">0</span>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="icon-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+</body>
+</html> 
